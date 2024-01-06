@@ -1,0 +1,31 @@
+@use 'variables';
+@use 'title';
+@use 'reviews';
+@use 'comments';
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0.1px;
+   box-sizing: border-box;
+}
+
+body {
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+}
+
+.grid {
+   width: 85%;
+   max-width: 320px;
+   margin: 90px auto;
+
+   @media (min-width: variables.$isDesktop) {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      max-width: 1080px;
+      row-gap: 22px;
+   }
+}

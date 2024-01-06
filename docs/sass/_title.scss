@@ -1,0 +1,33 @@
+@use 'variables';
+
+.title-container {
+   text-align: center;
+
+   h1 {
+      font-size: 41px;
+      font-family: League-Spartan-700;
+      color: variables.$VeryDarkMagenta;
+      line-height: 0.8;
+      letter-spacing: -2px;
+      margin-bottom: 15px;
+   }
+
+   p {
+      font-size: 17px;
+      font-family: League-Spartan-500;
+      line-height: 1.4;
+      color: variables.$DarkGrayishMagenta;
+   }
+
+   @media (min-width: variables.$isDesktop) {
+      text-align: left;
+      width: 400px;
+
+      h1 {
+         font-size: 56px;
+         padding-bottom: 10px;
+         line-height: 0.9
+         ;
+      }
+   }
+}

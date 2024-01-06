@@ -1,0 +1,29 @@
+@font-face {
+   font-family: League-Spartan-400;
+   src: url('../fonts/static/LeagueSpartan-Regular.ttf');
+}
+@font-face {
+   font-family: League-Spartan-500;
+   src: url('../fonts/static/LeagueSpartan-Medium.ttf');
+}
+@font-face {
+   font-family: League-Spartan-700;
+   src: url('../fonts/static/LeagueSpartan-Bold.ttf');
+}
+
+$layout: (
+   mobile: 375px,
+   desktop: 1440px,
+);
+
+$isDesktop: map-get($layout, desktop);
+
+// Colors
+$VeryDarkMagenta: hsl(300, 43%, 22%);
+$SoftPink: hsl(333, 80%, 67%);
+
+$DarkGrayishMagenta: hsl(303, 10%, 53%);
+$LightGrayishMagenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+// Font-size reference: 15px.
